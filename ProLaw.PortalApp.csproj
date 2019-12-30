@@ -1,0 +1,1017 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <TypeScriptExperimentalDecorators>true</TypeScriptExperimentalDecorators>
+    <TypeScriptEmitDecoratorMetadata>True</TypeScriptEmitDecoratorMetadata>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8E8C8380-7AAE-42F2-82B4-78EA18FFB856}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProLaw.PortalApp</RootNamespace>
+    <AssemblyName>ProLaw.PortalApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>2.3</TypeScriptToolsVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="e2e\protractor.conf.js" />
+    <Content Include="karma.conf.js" />
+    <Content Include="src\app\Area\About\about.component.css" />
+    <Content Include="src\app\Area\About\about.component.html" />
+    <Content Include="src\app\Area\Help\Add_a_Docket_Event.htm" />
+    <Content Include="src\app\Area\Help\Add_a_Document.htm" />
+    <Content Include="src\app\Area\Help\Add_a_New_Contact.htm" />
+    <Content Include="src\app\Area\Help\Add_a_New_Matter.htm" />
+    <Content Include="src\app\Area\Help\Add_a_Note.htm" />
+    <Content Include="src\app\Area\Help\Add_a_Time_Entry.htm" />
+    <Content Include="src\app\Area\Help\Add_Professionals_to_Docket_Schedule.htm" />
+    <Content Include="src\app\Area\Help\Alternate_Parents.htm" />
+    <Content Include="src\app\Area\Help\Assign_a_Proforma.htm" />
+    <Content Include="src\app\Area\Help\Assign_Roles.htm" />
+    <Content Include="src\app\Area\Help\Assign_the_Proforma_Generator_Role.htm" />
+    <Content Include="src\app\Area\Help\Cancel_a_Proforma.htm" />
+    <Content Include="src\app\Area\Help\Change_the_Order_of_the_Collaborators.htm" />
+    <Content Include="src\app\Area\Help\Check_Documents_In.htm" />
+    <Content Include="src\app\Area\Help\Check_Documents_Out.htm" />
+    <Content Include="src\app\Area\Help\Check_Spelling_of_Notes.htm" />
+    <Content Include="src\app\Area\Help\closed_book.gif" />
+    <Content Include="src\app\Area\Help\close_button.gif" />
+    <Content Include="src\app\Area\Help\cobra.css" />
+    <Content Include="src\app\Area\Help\Collaboration.htm" />
+    <Content Include="src\app\Area\Help\Configure_Email_Page.htm" />
+    <Content Include="src\app\Area\Help\Contacts_Custom_Tabs.htm" />
+    <Content Include="src\app\Area\Help\Contact_Details_Page.htm" />
+    <Content Include="src\app\Area\Help\contents_h.gif" />
+    <Content Include="src\app\Area\Help\contents_n.gif" />
+    <Content Include="src\app\Area\Help\Create_Joint_Proformas.htm" />
+    <Content Include="src\app\Area\Help\cshdat_robohelp.htm" />
+    <Content Include="src\app\Area\Help\cshdat_webhelp.htm" />
+    <Content Include="src\app\Area\Help\Daily_Docket_Views.htm" />
+    <Content Include="src\app\Area\Help\Defer_a_Proforma.htm" />
+    <Content Include="src\app\Area\Help\Designate_a_Proforma_Administrator.htm" />
+    <Content Include="src\app\Area\Help\Discount_a_Proforma.htm" />
+    <Content Include="src\app\Area\Help\Docket_Details_Page.htm" />
+    <Content Include="src\app\Area\Help\Docket_Preferences.htm" />
+    <Content Include="src\app\Area\Help\Docket_Preferences_Page.htm" />
+    <Content Include="src\app\Area\Help\Docket_Search_Page.htm" />
+    <Content Include="src\app\Area\Help\Document_Detail_Page.htm" />
+    <Content Include="src\app\Area\Help\Document_Preferences_Page.htm" />
+    <Content Include="src\app\Area\Help\Edit_a_Proforma.htm" />
+    <Content Include="src\app\Area\Help\Edit_Docket_Events.htm" />
+    <Content Include="src\app\Area\Help\ehlpdhtm.js" />
+    <Content Include="src\app\Area\Help\Email_Notifications.htm" />
+    <Content Include="src\app\Area\Help\Export_Docket_Calendar_to_PDF.htm" />
+    <Content Include="src\app\Area\Help\First_Topic.htm" />
+    <Content Include="src\app\Area\Help\Forward_a_Proforma.htm" />
+    <Content Include="src\app\Area\Help\Generate_a_Proforma.htm" />
+    <Content Include="src\app\Area\Help\Generate_a_Proforma_%28Steps_for_the_Owner%29.htm" />
+    <Content Include="src\app\Area\Help\Generate_Joint_Proformas.htm" />
+    <Content Include="src\app\Area\Help\Generate_Mass_Emails.htm" />
+    <Content Include="src\app\Area\Help\Generate_Proformas_for_Multiple_Matters.htm" />
+    <Content Include="src\app\Area\Help\glossary_h.gif" />
+    <Content Include="src\app\Area\Help\glossary_n.gif" />
+    <Content Include="src\app\Area\Help\go_button.gif" />
+    <Content Include="src\app\Area\Help\Images\Archived_Proforma_Icon.gif" />
+    <Content Include="src\app\Area\Help\Images\Archived_Proforma_Reviewer_Icon.gif" />
+    <Content Include="src\app\Area\Help\Images\Area_Buttons.png" />
+    <Content Include="src\app\Area\Help\Images\Assigned_Proforma_Icon.gif" />
+    <Content Include="src\app\Area\Help\Images\Assign_Professionals_Grid.gif" />
+    <Content Include="src\app\Area\Help\Images\Billing_Tab_Timekeeper_checkboxes.gif" />
+    <Content Include="src\app\Area\Help\Images\Calendar.png" />
+    <Content Include="src\app\Area\Help\Images\Calendar_decade_view.gif" />
+    <Content Include="src\app\Area\Help\Images\Calendar_Month_View.gif" />
+    <Content Include="src\app\Area\Help\Images\Calendar_on_Landing_Page.gif" />
+    <Content Include="src\app\Area\Help\Images\Check_Document_In_Icon.gif" />
+    <Content Include="src\app\Area\Help\Images\Check_Document_Out_Icon.gif" />
+    <Content Include="src\app\Area\Help\Images\Choose_Action_Dropdown.gif" />
+    <Content Include="src\app\Area\Help\Images\Client_Level_Statement_Format.gif" />
+    <Content Include="src\app\Area\Help\Images\Collaboration_Details.gif" />
+    <Content Include="src\app\Area\Help\Images\Collaboration_Details_Arrows.gif" />
+    <Content Include="src\app\Area\Help\Images\Collaboration_Setup_Icon_Black.gif" />
+    <Content Include="src\app\Area\Help\Images\Collaboration_Setup_Icon_Blue.gif" />
+    <Content Include="src\app\Area\Help\Images\Configure_Email.gif" />
+    <Content Include="src\app\Area\Help\Images\Contacts_Tabs.png" />
+    <Content Include="src\app\Area\Help\Images\Contact_Custom_Tabs.gif" />
+    <Content Include="src\app\Area\Help\Images\Contact_Custom_Tabs_Scroll_Buttons.gif" />
+    <Content Include="src\app\Area\Help\Images\Contact_Details_Page.png" />
+    <Content Include="src\app\Area\Help\Images\Contact_Search.png" />
+    <Content Include="src\app\Area\Help\Images\Contact_Search_By.png" />
+    <Content Include="src\app\Area\Help\Images\Cost_Write_Up_Down.gif" />
+    <Content Include="src\app\Area\Help\Images\Deferred_Proforma_Icon.gif" />
+    <Content Include="src\app\Area\Help\Images\Docket_Details_Docket_Tab.gif" />
+    <Content Include="src\app\Area\Help\Images\Docket_Details_Options_Tab.gif" />
+    <Content Include="src\app\Area\Help\Images\Docket_Details_Reminders_Tab.gif" />
+    <Content Include="src\app\Area\Help\Images\Docket_Preferences_Page.png" />
+    <Content Include="src\app\Area\Help\Images\Docket_Search_Page.png" />
+    <Content Include="src\app\Area\Help\Images\Document_Details.gif" />
+    <Content Include="src\app\Area\Help\Images\Document_Preferences.gif" />
+    <Content Include="src\app\Area\Help\Images\Document_Search.gif" />
+    <Content Include="src\app\Area\Help\Images\Document_Search5.GIF" />
+    <Content Include="src\app\Area\Help\Images\Edited_Proforma_Record_Icon.gif" />
+    <Content Include="src\app\Area\Help\Images\Edit_Proforma_Icon.gif" />
+    <Content Include="src\app\Area\Help\Images\Email_Notification_Preferences.gif" />
+    <Content Include="src\app\Area\Help\Images\Fee_Write_Up_Down.gif" />
+    <Content Include="src\app\Area\Help\Images\Generated_Proforma_Record_Icon.gif" />
+    <Content Include="src\app\Area\Help\Images\Generator_Button.gif" />
+    <Content Include="src\app\Area\Help\Images\Go_to_Alternate_Parent_icon.gif" />
+    <Content Include="src\app\Area\Help\Images\License_Status.gif" />
+    <Content Include="src\app\Area\Help\Images\Log_In_Button.png" />
+    <Content Include="src\app\Area\Help\Images\Log_Out_Button.png" />
+    <Content Include="src\app\Area\Help\Images\Main_Menu_Icon.gif" />
+    <Content Include="src\app\Area\Help\Images\Matters_Dropdown_Menu.gif" />
+    <Content Include="src\app\Area\Help\Images\Matter_Custom_Tabs.gif" />
+    <Content Include="src\app\Area\Help\Images\Matter_Custom_Tabs_Scroll_Buttons.gif" />
+    <Content Include="src\app\Area\Help\Images\Matter_Detail.gif" />
+    <Content Include="src\app\Area\Help\Images\Matter_Detail_Page.png" />
+    <Content Include="src\app\Area\Help\Images\Matter_Search_Page.png" />
+    <Content Include="src\app\Area\Help\Images\MSG_Collaboration_Not_Complete.gif" />
+    <Content Include="src\app\Area\Help\Images\msg_Generate_Proforma.gif" />
+    <Content Include="src\app\Area\Help\Images\Note_Details.gif" />
+    <Content Include="src\app\Area\Help\Images\Note_Search.gif" />
+    <Content Include="src\app\Area\Help\Images\No_WIP_Transactions_msg.gif" />
+    <Content Include="src\app\Area\Help\Images\Owner_Proforma_List.gif" />
+    <Content Include="src\app\Area\Help\Images\PortalLoginPage.png" />
+    <Content Include="src\app\Area\Help\Images\Portal_Password_Field.gif" />
+    <Content Include="src\app\Area\Help\Images\Portal_Toolbar.gif" />
+    <Content Include="src\app\Area\Help\Images\PP_arrow_buttons.gif" />
+    <Content Include="src\app\Area\Help\Images\PP_Configure_Email.gif" />
+    <Content Include="src\app\Area\Help\Images\PP_confirm_mass_submit_release.gif" />
+    <Content Include="src\app\Area\Help\Images\PP_joint_proforma_example.gif" />
+    <Content Include="src\app\Area\Help\Images\PP_Mass_Role_Assign_Successful_Msg.gif" />
+    <Content Include="src\app\Area\Help\Images\PP_mass_submit_successful.gif" />
+    <Content Include="src\app\Area\Help\Images\PP_Owner_Drop-down.gif" />
+    <Content Include="src\app\Area\Help\Images\PP_Owner_Proforma_List_Page_with_Icons.gif" />
+    <Content Include="src\app\Area\Help\Images\Preview_Documents_Icon.gif" />
+    <Content Include="src\app\Area\Help\Images\Professionals_Button.png" />
+    <Content Include="src\app\Area\Help\Images\Proforma_Details_Matter_Info_Tabgif.gif" />
+    <Content Include="src\app\Area\Help\Images\Proforma_Details_Page.gif" />
+    <Content Include="src\app\Area\Help\Images\Proforma_Released.gif" />
+    <Content Include="src\app\Area\Help\Images\Proforma_Transferred_Icon.gif" />
+    <Content Include="src\app\Area\Help\Images\ProLaw_Home_Page_Icon.gif" />
+    <Content Include="src\app\Area\Help\Images\Recents.png" />
+    <Content Include="src\app\Area\Help\Images\Refresh_Button.png" />
+    <Content Include="src\app\Area\Help\Images\Refresh_Inquiry_Button.gif" />
+    <Content Include="src\app\Area\Help\Images\Relate_Alternate_Parent_dont_relate.gif" />
+    <Content Include="src\app\Area\Help\Images\Relate_Alternate_Parent_relate.gif" />
+    <Content Include="src\app\Area\Help\Images\Released_Proforma_Icon.gif" />
+    <Content Include="src\app\Area\Help\Images\Returned_Proforma_Icon.gif" />
+    <Content Include="src\app\Area\Help\Images\Save_and_Cancel.png" />
+    <Content Include="src\app\Area\Help\Images\Security_Classes_General_Tab.gif" />
+    <Content Include="src\app\Area\Help\Images\Security_Classes_Transactions_Tab.gif" />
+    <Content Include="src\app\Area\Help\Images\Select_Professionals.png" />
+    <Content Include="src\app\Area\Help\Images\Setup_Professionals_Required_Fields.gif" />
+    <Content Include="src\app\Area\Help\Images\Submitted_Proforma_Icon.gif" />
+    <Content Include="src\app\Area\Help\Images\Time_Entry_screen.gif" />
+    <Content Include="src\app\Area\Help\Images\Transaction_Search_Page.png" />
+    <Content Include="src\app\Area\Help\Images\Transferred_Proforma_Icon.gif" />
+    <Content Include="src\app\Area\Help\Images\Unassigned_Proforma_Icon.gif" />
+    <Content Include="src\app\Area\Help\Images\Unassigned_Transaction_Icon.gif" />
+    <Content Include="src\app\Area\Help\Images\Under_Review_Multiple_Reviewers_Icon.gif" />
+    <Content Include="src\app\Area\Help\Images\Under_Review_One_Reviewer_Icon.gif" />
+    <Content Include="src\app\Area\Help\Images\Undo_Document_Changes_Icon.gif" />
+    <Content Include="src\app\Area\Help\Images\Vertical_Menu_Buttons.gif" />
+    <Content Include="src\app\Area\Help\Images\Weekly_Docket.png" />
+    <Content Include="src\app\Area\Help\Images\Write_Up_Down_Button.gif" />
+    <Content Include="src\app\Area\Help\index.htm" />
+    <Content Include="src\app\Area\Help\index_csh.htm" />
+    <Content Include="src\app\Area\Help\index_h.gif" />
+    <Content Include="src\app\Area\Help\index_n.gif" />
+    <Content Include="src\app\Area\Help\index_rhc.htm" />
+    <Content Include="src\app\Area\Help\Landing_Page_Tool_Bar.htm" />
+    <Content Include="src\app\Area\Help\Logging_In_to_ProLaw_Portal.htm" />
+    <Content Include="src\app\Area\Help\Logging_Out_of_ProLaw_Portal.htm" />
+    <Content Include="src\app\Area\Help\Mark_a_Proforma_as_Complete.htm" />
+    <Content Include="src\app\Area\Help\Mass_Assignment_of_Owner_and_Reviewer_Roles.htm" />
+    <Content Include="src\app\Area\Help\Mass_Submit_Release.htm" />
+    <Content Include="src\app\Area\Help\Matter_Custom_Tabs.htm" />
+    <Content Include="src\app\Area\Help\Matter_Detail.htm" />
+    <Content Include="src\app\Area\Help\Navigating_the_Landing_Page_Calendar.htm" />
+    <Content Include="src\app\Area\Help\Navigating_the_ProLaw_Portal.htm" />
+    <Content Include="src\app\Area\Help\Note_Details_Page.htm" />
+    <Content Include="src\app\Area\Help\open_book.gif" />
+    <Content Include="src\app\Area\Help\Owner_Proforma_List_Page.htm" />
+    <Content Include="src\app\Area\Help\Portal_Landing_Page.htm" />
+    <Content Include="src\app\Area\Help\Preview_a_Document.htm" />
+    <Content Include="src\app\Area\Help\Print_a_Proforma.htm" />
+    <Content Include="src\app\Area\Help\Print_Docket_Calendar.htm" />
+    <Content Include="src\app\Area\Help\Proforma_Details_Matter_Info_Tab.htm" />
+    <Content Include="src\app\Area\Help\ProLaw_Paperless_Proforma_Overview.htm" />
+    <Content Include="src\app\Area\Help\ProLaw_Paperless_Proforma_Workflow.htm" />
+    <Content Include="src\app\Area\Help\prolaw_wordmark.png" />
+    <Content Include="src\app\Area\Help\Refresh_the_Docket_Schedule.htm" />
+    <Content Include="src\app\Area\Help\Release_a_Proforma.htm" />
+    <Content Include="src\app\Area\Help\resource\resource_xml.js" />
+    <Content Include="src\app\Area\Help\Return_a_Proforma.htm" />
+    <Content Include="src\app\Area\Help\Reviewer_Proforma_List_Page.htm" />
+    <Content Include="src\app\Area\Help\Review_a_Proforma.htm" />
+    <Content Include="src\app\Area\Help\SearchOptions.xml" />
+    <Content Include="src\app\Area\Help\Search_for_Contacts.htm" />
+    <Content Include="src\app\Area\Help\Search_for_Docket_Events.htm" />
+    <Content Include="src\app\Area\Help\Search_for_Documents.htm" />
+    <Content Include="src\app\Area\Help\Search_for_Matters.htm" />
+    <Content Include="src\app\Area\Help\Search_for_Notes.htm" />
+    <Content Include="src\app\Area\Help\Search_for_Transactions.htm" />
+    <Content Include="src\app\Area\Help\search_h.gif" />
+    <Content Include="src\app\Area\Help\search_n.gif" />
+    <Content Include="src\app\Area\Help\Select_Professionals_Page.htm" />
+    <Content Include="src\app\Area\Help\Set_Document_Preferences.htm" />
+    <Content Include="src\app\Area\Help\Set_Up_Custom_Tabs.htm" />
+    <Content Include="src\app\Area\Help\Set_Up_Email.htm" />
+    <Content Include="src\app\Area\Help\Set_Up_Professionals.htm" />
+    <Content Include="src\app\Area\Help\Set_Up_Security.htm" />
+    <Content Include="src\app\Area\Help\Status_Icons.htm" />
+    <Content Include="src\app\Area\Help\Submit_a_Proforma_to_a_Reviewer.htm" />
+    <Content Include="src\app\Area\Help\Submit_Joint_Proformas.htm" />
+    <Content Include="src\app\Area\Help\Time_Entry_Detail_Page.htm" />
+    <Content Include="src\app\Area\Help\topic.gif" />
+    <Content Include="src\app\Area\Help\Transfer_a_Proforma.htm" />
+    <Content Include="src\app\Area\Help\Undefer_a_Proforma.htm" />
+    <Content Include="src\app\Area\Help\Verify_the_Email_Address_of_the_Proforma_Administrator.htm" />
+    <Content Include="src\app\Area\Help\View_a_Returned_Proforma.htm" />
+    <Content Include="src\app\Area\Help\View_a_Transferred_Proforma.htm" />
+    <Content Include="src\app\Area\Help\View_Joint_Proformas.htm" />
+    <Content Include="src\app\Area\Help\whbrs_xml.js" />
+    <Content Include="src\app\Area\Help\whcshdata.js" />
+    <Content Include="src\app\Area\Help\whcsh_home.htm" />
+    <Content Include="src\app\Area\Help\whcsh_xml.js" />
+    <Content Include="src\app\Area\Help\whdata\whgdata.js" />
+    <Content Include="src\app\Area\Help\whdata\whglo.htm" />
+    <Content Include="src\app\Area\Help\whdata\whglo.js" />
+    <Content Include="src\app\Area\Help\whdata\whidata.js" />
+    <Content Include="src\app\Area\Help\whdata\whidx.htm" />
+    <Content Include="src\app\Area\Help\whdata\whidx.js" />
+    <Content Include="src\app\Area\Help\whdata\whtdata.js" />
+    <Content Include="src\app\Area\Help\whdata\whtdata0.htm" />
+    <Content Include="src\app\Area\Help\whdata\whtoc.htm" />
+    <Content Include="src\app\Area\Help\whdata\whtoc.js" />
+    <Content Include="src\app\Area\Help\whestart.ico" />
+    <Content Include="src\app\Area\Help\whfbody.htm" />
+    <Content Include="src\app\Area\Help\whfdhtml.htm" />
+    <Content Include="src\app\Area\Help\whfform.htm" />
+    <Content Include="src\app\Area\Help\whfhost.js" />
+    <Content Include="src\app\Area\Help\whform.js" />
+    <Content Include="src\app\Area\Help\whframes.js" />
+    <Content Include="src\app\Area\Help\whgbody.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whexpbar.gif" />
+    <Content Include="src\app\Area\Help\whgdata\whlstf0.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstf1.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstf10.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstf11.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstf12.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstf13.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstf14.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstf15.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstf2.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstf3.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstf4.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstf5.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstf6.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstf7.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstf8.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstf9.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstfl0.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstfl1.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstfl10.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstfl11.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstfl12.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstfl13.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstfl14.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstfl15.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstfl16.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstfl17.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstfl18.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstfl19.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstfl2.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstfl20.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstfl21.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstfl22.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstfl3.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstfl4.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstfl5.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstfl6.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstfl7.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstfl8.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstfl9.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstg0.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlsti0.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstt0.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstt1.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstt10.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstt11.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstt12.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstt13.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstt14.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstt15.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstt16.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstt2.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstt3.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstt4.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstt5.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstt6.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstt7.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstt8.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whlstt9.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whnvf30.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whnvf31.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whnvf32.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whnvf33.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whnvl31.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whnvl32.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whnvl33.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whnvp30.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whnvp31.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whnvp32.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whnvp33.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whnvt30.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whnvt31.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whnvt32.htm" />
+    <Content Include="src\app\Area\Help\whgdata\whnvt33.htm" />
+    <Content Include="src\app\Area\Help\whgdef.htm" />
+    <Content Include="src\app\Area\Help\whgdhtml.htm" />
+    <Content Include="src\app\Area\Help\whghost.js" />
+    <Content Include="src\app\Area\Help\whhost.js" />
+    <Content Include="src\app\Area\Help\whibody.htm" />
+    <Content Include="src\app\Area\Help\whidhtml.htm" />
+    <Content Include="src\app\Area\Help\whiform.htm" />
+    <Content Include="src\app\Area\Help\whihost.js" />
+    <Content Include="src\app\Area\Help\whlang.js" />
+    <Content Include="src\app\Area\Help\whmozemu.js" />
+    <Content Include="src\app\Area\Help\whmsg.js" />
+    <Content Include="src\app\Area\Help\whnjs.htm" />
+    <Content Include="src\app\Area\Help\whphost.js" />
+    <Content Include="src\app\Area\Help\whproj.htm" />
+    <Content Include="src\app\Area\Help\whproj.js" />
+    <Content Include="src\app\Area\Help\whproj_xml.js" />
+    <Content Include="src\app\Area\Help\whproxy.js" />
+    <Content Include="src\app\Area\Help\whres_xml.js" />
+    <Content Include="src\app\Area\Help\whrstart.ico" />
+    <Content Include="src\app\Area\Help\whskin_banner.htm" />
+    <Content Include="src\app\Area\Help\whskin_blank.htm" />
+    <Content Include="src\app\Area\Help\whskin_frmset01.htm" />
+    <Content Include="src\app\Area\Help\whskin_frmset010.htm" />
+    <Content Include="src\app\Area\Help\whskin_homepage.htm" />
+    <Content Include="src\app\Area\Help\whskin_info.htm" />
+    <Content Include="src\app\Area\Help\whskin_mbars.htm" />
+    <Content Include="src\app\Area\Help\whskin_pdhtml.htm" />
+    <Content Include="src\app\Area\Help\whskin_pickup.htm" />
+    <Content Include="src\app\Area\Help\whskin_plist.htm" />
+    <Content Include="src\app\Area\Help\whskin_tbars.htm" />
+    <Content Include="src\app\Area\Help\whskin_tw.htm" />
+    <Content Include="src\app\Area\Help\whstart.ico" />
+    <Content Include="src\app\Area\Help\whstart.js" />
+    <Content Include="src\app\Area\Help\whstub.js" />
+    <Content Include="src\app\Area\Help\whst_topics.xml" />
+    <Content Include="src\app\Area\Help\whtbar.js" />
+    <Content Include="src\app\Area\Help\whtdhtml.htm" />
+    <Content Include="src\app\Area\Help\whthost.js" />
+    <Content Include="src\app\Area\Help\whtopic.js" />
+    <Content Include="src\app\Area\Help\wht_abge.jpg" />
+    <Content Include="src\app\Area\Help\wht_abgi.jpg" />
+    <Content Include="src\app\Area\Help\wht_abgw.jpg" />
+    <Content Include="src\app\Area\Help\wht_abte.jpg" />
+    <Content Include="src\app\Area\Help\wht_abti.jpg" />
+    <Content Include="src\app\Area\Help\wht_abtw.jpg" />
+    <Content Include="src\app\Area\Help\wht_fts_h.gif" />
+    <Content Include="src\app\Area\Help\wht_fts_n.gif" />
+    <Content Include="src\app\Area\Help\wht_glo_h.gif" />
+    <Content Include="src\app\Area\Help\wht_glo_n.gif" />
+    <Content Include="src\app\Area\Help\wht_go.gif" />
+    <Content Include="src\app\Area\Help\wht_hide.gif" />
+    <Content Include="src\app\Area\Help\wht_idx_h.gif" />
+    <Content Include="src\app\Area\Help\wht_idx_n.gif" />
+    <Content Include="src\app\Area\Help\wht_logo1.gif" />
+    <Content Include="src\app\Area\Help\wht_logo2.gif" />
+    <Content Include="src\app\Area\Help\wht_next.gif" />
+    <Content Include="src\app\Area\Help\wht_next_g.gif" />
+    <Content Include="src\app\Area\Help\wht_prev.gif" />
+    <Content Include="src\app\Area\Help\wht_prev_g.gif" />
+    <Content Include="src\app\Area\Help\wht_spac.gif" />
+    <Content Include="src\app\Area\Help\wht_sync.gif" />
+    <Content Include="src\app\Area\Help\wht_tab0.gif" />
+    <Content Include="src\app\Area\Help\wht_tab1.gif" />
+    <Content Include="src\app\Area\Help\wht_tab2.gif" />
+    <Content Include="src\app\Area\Help\wht_tab3.gif" />
+    <Content Include="src\app\Area\Help\wht_tab4.gif" />
+    <Content Include="src\app\Area\Help\wht_tab5.gif" />
+    <Content Include="src\app\Area\Help\wht_tab6.gif" />
+    <Content Include="src\app\Area\Help\wht_tab7.gif" />
+    <Content Include="src\app\Area\Help\wht_tab8.gif" />
+    <Content Include="src\app\Area\Help\wht_toc1.gif" />
+    <Content Include="src\app\Area\Help\wht_toc2.gif" />
+    <Content Include="src\app\Area\Help\wht_toc3.gif" />
+    <Content Include="src\app\Area\Help\wht_toc4.gif" />
+    <Content Include="src\app\Area\Help\wht_toc_h.gif" />
+    <Content Include="src\app\Area\Help\wht_toc_n.gif" />
+    <Content Include="src\app\Area\Help\wht_ws.gif" />
+    <Content Include="src\app\Area\Help\wht_ws_g.gif" />
+    <Content Include="src\app\Area\Help\whutils.js" />
+    <Content Include="src\app\Area\Help\whver.js" />
+    <Content Include="src\app\Area\Help\whxdata\packageindex_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\package_0_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\package_10_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\package_11_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\package_12_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\package_13_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\package_14_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\package_1_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\package_2_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\package_3_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\package_4_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\package_5_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\package_6_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\package_7_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\package_8_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\package_9_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\searchAuto_Index.js" />
+    <Content Include="src\app\Area\Help\whxdata\searchAuto_Map_0.js" />
+    <Content Include="src\app\Area\Help\whxdata\searchAuto_Model_0.js" />
+    <Content Include="src\app\Area\Help\whxdata\searchAuto_Model_1.js" />
+    <Content Include="src\app\Area\Help\whxdata\searchAuto_Model_2.js" />
+    <Content Include="src\app\Area\Help\whxdata\synonym.xml" />
+    <Content Include="src\app\Area\Help\whxdata\synonym_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\topictableindex_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\topictable_0_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\topictable_1_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\whfts.xml" />
+    <Content Include="src\app\Area\Help\whxdata\whfts_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\whglo_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\whidx_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\whtdata0_xml.js" />
+    <Content Include="src\app\Area\Help\whxdata\whtoc_xml.js" />
+    <Content Include="src\app\Area\Help\Write_Up_Down.htm" />
+    <Content Include="src\app\Area\Help\xmlreadhelper.js" />
+    <Content Include="src\app\Area\PaperlessProforma\Templates\addtoMatters.component.html" />
+    <Content Include="src\app\Area\PaperlessProforma\Templates\MailConfig.component.html" />
+    <Content Include="src\app\Area\PaperlessProforma\Templates\matterInfo.component.html" />
+    <Content Include="src\app\Area\PaperlessProforma\Templates\metrics.component.html" />
+    <Content Include="src\app\Area\PaperlessProforma\Templates\preferences.component.html" />
+    <Content Include="src\app\Area\PaperlessProforma\Templates\printStatements.component.html" />
+    <Content Include="src\app\Area\PaperlessProforma\Templates\proforma.component.html" />
+    <Content Include="src\app\Area\PaperlessProforma\Templates\proformaDetails.component.html" />
+    <Content Include="src\app\Area\PaperlessProforma\Templates\ProformaListing.component.html" />
+    <Content Include="src\app\Area\PaperlessProforma\Templates\resetProformaTransactions.component.html" />
+    <Content Include="src\app\Area\PaperlessProforma\Templates\writeUpDownDetails.component.html" />
+    <Content Include="src\app\Area\PaperlessProforma\Templates\_timeDetails.component.html" />
+    <Content Include="src\app\Area\PaperlessProforma\Templates\_commonProformaDetails.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Contacts\Templates\add-contacts.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Contacts\Templates\contacts-related-contacts.html" />
+    <Content Include="src\app\Area\ProLawPortal\Contacts\Templates\contacts-related-matters.html" />
+    <Content Include="src\app\Area\ProLawPortal\Contacts\Templates\address-info.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Contacts\Templates\contact-customtab-prefrences.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Contacts\Templates\contact-notes.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Contacts\Templates\contact-vendors.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Contacts\Templates\contacts.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\Contacts\Templates\contacts.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Contacts\Templates\phone-info.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Dockets\Templates\add-dockets.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Dockets\Templates\altParent-dialog.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\Dockets\Templates\altParent-Dialog.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Dockets\Templates\docket-details.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Dockets\Templates\docket-preferences.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Dockets\Templates\dockets.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\Dockets\Templates\dockets.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Dockets\Templates\reminder-docket.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\Dockets\Templates\reminder-docket.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Documents\Templates\add-documents.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Documents\Templates\document-preferences.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Documents\Templates\documents.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\Documents\Templates\documents.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Documents\Templates\file-uploader.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\Documents\Templates\file-uploader.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Error\error.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Home\Templates\createDocket.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\Home\Templates\createDocket.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Home\Templates\home.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\Home\Templates\home.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Home\Templates\professional.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\Home\Templates\professional.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Home\Templates\goToDate.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\Home\Templates\goToDate.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Login\Templates\login.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\Login\Templates\login.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Login\Templates\logoff.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\add-matters.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\add-matters.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\assigned-contact-tab.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\assigned-contact-tab.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\assigned-contacts-tab-strip.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\assigned-contacts-tab-strip.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\assigned-professional-dialog-component.css" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\assigned-professional-dialog-component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\assigned-professionals.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\buildInquiryLine.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\events-detail.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\inquiryInfo.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\matters-events.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\matter-customtab-prefrences.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\matters-billing.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\matters-detail.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\matters-inquiry.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\matters-notes.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\matters-related-contacts.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\matters-related-matters.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\matters.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\matters.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\prolawtreeview.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\related-note-events.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\trustAccount.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Templates\wudInquiryLine.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Notes\Templates\add-notes.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Notes\Templates\notes.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\Notes\Templates\notes.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\ComboBoxArrow\comboboxarrow.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\ComboBoxArrow\comboboxarrow.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\cascadebox.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\cascadebox.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\checkbox.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\checkbox.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\combobox.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\combobox.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\contactbox.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\contactbox.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\currencybox.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\currencybox.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\datebox.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\datebox.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\datetimebox.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\datetimebox.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\numericbox.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\numericbox.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\phonebox.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\phonebox.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\ssnbox.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\ssnbox.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\tabpage.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\tabpage.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\textarea.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\textarea.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\textbox.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\textbox.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabPreferences\customtabpreferences.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\CustomTabPreferences\customtabpreferences.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\ListDialog\list-dialog-component.css" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\ListDialog\list-dialog-component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\LoadingTemplate\loadingtemplate.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\LoadingTemplate\loadingtemplate.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\MessageBox\MessageBox.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\MessageBox\MessageBox.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\Notification\notification.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\PopupSearch\popupsearch.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\PopupSearch\popupsearch.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\PortalGrid\portalgrid.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\PortalGrid\portalgrid.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\ProfessionalGrid\professional-grid.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\RelatedContactMatterGrid\related-contacts-matters.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\TextInputSearchFunnel\textinputsearchfunnel.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\TextInputSearchFunnel\textinputsearchfunnel.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\ProLawDisabledDateTimePicker\disableddtpicker.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\PortalShared\ProLawDisabledDateTimePicker\disableddtpicker.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Transactions\Templates\add-transactions.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Transactions\Templates\move-to-wip.component.html" />
+    <Content Include="src\app\Area\ProLawPortal\Transactions\Templates\transactions.component.css" />
+    <Content Include="src\app\Area\ProLawPortal\Transactions\Templates\transactions.component.html" />
+    <Content Include="src\app\app.component.html" />
+    <Content Include="src\app\Area\PaperlessProforma\Templates\roles.component.html" />
+    <Content Include="src\app\Area\PaperlessProforma\Templates\dashboard.component.html" />
+    <Content Include="src\app\images\EliteE.png" />
+    <Content Include="src\app\images\Flat\sprite.png" />
+    <Content Include="src\app\images\icons\collaboration-disabled.png" />
+    <Content Include="src\app\images\icons\collaboration.png" />
+    <Content Include="src\app\images\icons\confirmationicon.png" />
+    <Content Include="src\app\images\icons\discount-disabled.png" />
+    <Content Include="src\app\images\icons\discount.png" />
+    <Content Include="src\app\images\icons\editcollaboration.png" />
+    <Content Include="src\app\images\icons\emailconfig-default.png" />
+    <Content Include="src\app\images\icons\emailconfig-hover.png" />
+    <Content Include="src\app\images\icons\first-disable.png" />
+    <Content Include="src\app\images\icons\first.png" />
+    <Content Include="src\app\images\icons\last-disable.png" />
+    <Content Include="src\app\images\icons\last.png" />
+    <Content Include="src\app\images\icons\metrics-default.png" />
+    <Content Include="src\app\images\icons\metrics-hover.png" />
+    <Content Include="src\app\images\icons\nextDisable.png" />
+    <Content Include="src\app\images\icons\next.png" />
+    <Content Include="src\app\images\icons\Owner_archived.png" />
+    <Content Include="src\app\images\icons\previousDisable.png" />
+    <Content Include="src\app\images\icons\previous.png" />
+    <Content Include="src\app\images\icons\printStatementButton.png" />
+    <Content Include="src\app\images\icons\ProformaGenerator-default.png" />
+    <Content Include="src\app\images\icons\assignrole-default.png" />
+    <Content Include="src\app\images\icons\ProformaGenerator-hover.png" />
+    <Content Include="src\app\images\icons\assignrole-hover.png" />
+    <Content Include="src\app\images\icons\Biller_AssignProforma.png" />
+    <Content Include="src\app\images\icons\Biller_RejectProforma.png" />
+    <Content Include="src\app\images\icons\Biller_Released.png" />
+    <Content Include="src\app\images\icons\Biller_Returned.png" />
+    <Content Include="src\app\images\icons\Biller_Transferred.png" />
+    <Content Include="src\app\images\icons\Biller_UnassignProforma.png" />
+    <Content Include="src\app\images\icons\Biller_UnderReview.png" />
+    <Content Include="src\app\images\icons\Biller_UnderReview1.png" />
+    <Content Include="src\app\images\icons\edit.png" />
+    <Content Include="src\app\images\icons\generate.png" />
+    <Content Include="src\app\images\icons\help-default.png" />
+    <Content Include="src\app\images\icons\help-hover.png" />
+    <Content Include="src\app\images\icons\help-select.png" />
+    <Content Include="src\app\images\icons\matters-default.png" />
+    <Content Include="src\app\images\icons\matters-hover.png" />
+    <Content Include="src\app\images\icons\matters-select.png" />
+    <Content Include="src\app\images\icons\notes-default.png" />
+    <Content Include="src\app\images\icons\notes-hover.png" />
+    <Content Include="src\app\images\icons\notes-select.png" />
+    <Content Include="src\app\images\icons\refresh-default.png" />
+    <Content Include="src\app\images\icons\Owner_Deferred.png" />
+    <Content Include="src\app\images\icons\Owner_EditedProforma.png" />
+    <Content Include="src\app\images\icons\Owner_GeneratedProforma.png" />
+    <Content Include="src\app\images\icons\Owner_NoStage.png" />
+    <Content Include="src\app\images\icons\Owner_SubmittedProforma.png" />
+    <Content Include="src\app\images\icons\ProLawIcon100.ico" />
+    <Content Include="src\app\images\icons\Reviewer_archived.png" />
+    <Content Include="src\app\images\icons\start.png" />
+    <Content Include="src\app\images\icons\wud-disable.png" />
+    <Content Include="src\app\images\icons\wud.png" />
+    <Content Include="src\app\images\icons\confirmicon.png" />
+    <Content Include="src\app\Shared\Infrastructure\ProLawAlert\prolawalert.component.css" />
+    <Content Include="src\app\Shared\Infrastructure\ProLawAlert\prolawalert.component.html" />
+    <Content Include="src\app\Shared\Infrastructure\ProLawDialog\prolawdialog.component.css" />
+    <Content Include="src\app\Shared\Infrastructure\ProLawDialog\prolawdialog.component.html" />
+    <Content Include="src\app\Shared\Infrastructure\ProLawGrid\prolawgrid.component.css" />
+    <Content Include="src\app\Shared\Infrastructure\ProLawGrid\prolawgrid.component.html" />
+    <Content Include="src\app\Shared\Infrastructure\ProLawInProgress\prolawinprogress.component.css" />
+    <Content Include="src\app\Shared\Infrastructure\ProLawInProgress\prolawinprogress.component.html" />
+    <Content Include="src\app\Shared\Infrastructure\ProLawPageMessage\pagemessage.component.html" />
+    <Content Include="src\app\Shared\Infrastructure\ProLawSpellCheck\spellcheck.component.css" />
+    <Content Include="src\app\Shared\Infrastructure\ProLawSpellCheck\spellcheck.component.html" />
+    <Content Include="src\app\Shared\Infrastructure\ProLawValidation\vaidation.component.html" />
+    <Content Include="src\app\Shared\Infrastructure\SearchBase\searchbase.component.html" />
+    <Content Include="src\app\Shared\Infrastructure\SearchProfessional\SearchProfessional.html" />
+    <Content Include="src\assets\bootstrap.min.css" />
+    <Content Include="src\assets\erroricon.png" />
+    <Content Include="src\assets\kendo.scheduler.css" />
+    <Content Include="src\assets\loading-image.gif" />
+    <Content Include="src\assets\all.css" />
+    <Content Include="src\assets\bootstrap.css" />
+    <Content Include="src\assets\kendo.css" />
+    <Content Include="src\assets\kendo-splitter.css" />
+    <Content Include="src\assets\Site.css" />
+    <Content Include="src\assets\style.css" />
+    <Content Include="src\assets\successicon.png" />
+    <Content Include="src\assets\underlineicon.gif" />
+    <Content Include="src\assets\warningicon.png" />
+    <Content Include="src\fonts\font-awesome.css" />
+    <Content Include="src\fonts\fontawesome-webfont.svg" />
+    <Content Include="src\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="src\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="package.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="e2e\src\app.e2e-spec.ts" />
+    <TypeScriptCompile Include="e2e\src\app.po.ts" />
+    <TypeScriptCompile Include="index.ts" />
+    <TypeScriptCompile Include="src\app\app.component.ts" />
+    <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\app\app.routing.ts" />
+    <TypeScriptCompile Include="src\app\appconfig.ts" />
+    <TypeScriptCompile Include="src\app\Area\About\about-components.ts" />
+    <TypeScriptCompile Include="src\app\Area\About\about-version-provider.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Components\Collaboration\CollaborationDetails.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Components\Dashboard\Dashboard.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Components\Dashboard\Metrics.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Components\Dashboard\Preferences.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Components\index.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Components\Mail\MailConfig.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Components\PrintStatement\AddtoMatters.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Components\PrintStatement\PrintStatements.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Components\ProformaDetails\CommonProformaDetails.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Components\ProformaDetails\TimeDetails.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Components\Proforma\MassProformaGeneration.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Components\Proforma\Proforma.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Components\ProformaDetails\MatterInfo.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Components\ProformaDetails\ProformaDetails.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Components\Proforma\ProformaSwitch.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Components\Proforma\ResetProformaTransactions.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Components\Reporting\PrintReport.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Components\Reporting\ProformaListing.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Components\Roles\Roles.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Components\WriteUpDown\WriteUpDown.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Models\roles.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Services\collaboration.service.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Services\common.service.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Services\index.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Services\dashboard.service.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Services\iproforma.service.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Models\dashboard.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Models\index.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Services\matters.service.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Services\printstatements.service.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Services\proforma.service.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Services\roles.service.ts" />
+    <TypeScriptCompile Include="src\app\Area\PaperlessProforma\Models\AppIdentity.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Contacts\Components\add-contacts.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Contacts\Components\contacts-related-contacts.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Contacts\Components\contacts-related-matters.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Contacts\Components\address-info.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Contacts\Components\contact-customtab-prefrences.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Contacts\Components\contact-notes.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Contacts\Components\contact-vendors.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Contacts\Components\contacts.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Contacts\Components\phone-info.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Dockets\Components\add-dockets.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Dockets\Components\altParent-dialog.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Dockets\Components\docket-details.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Dockets\Components\docket-preferences.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Dockets\Components\dockets.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Dockets\Components\reminder-docket.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Documents\Components\add-documents.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Documents\Components\document-preferences.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Documents\Components\documents.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Documents\Components\file-uploader.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Error\error.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Home\Components\calendar-events-utility.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Home\Components\createDocket.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Home\Components\home.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Home\Components\professional.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Home\Components\goToDate.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Login\Components\login.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Login\Components\logoff.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Matters\Components\add-matters.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Matters\Components\assigned-contact-tab.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Matters\Components\assigned-contacts-tab-strip.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Matters\Components\assigned-contacts-utility.class.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Matters\Components\assigned-contacts-utility.spec.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Matters\Components\assigned-professional-dialog-component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Matters\Components\assigned-professionals.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Matters\Components\buildInquiryLine.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Matters\Components\events-detail.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Matters\Components\inquiryInfo.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Matters\Components\matters-events.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Matters\Components\matter-customtab-prefrences.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Matters\Components\matters-billing.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Matters\Components\matters-detail.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Matters\Components\matters-inquiry.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Matters\Components\matters-notes.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Matters\Components\matters-related-contacts.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Matters\Components\matters-related-matters.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Matters\Components\matters.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Matters\Components\related-note-events.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Matters\Components\trustAccount.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Matters\Components\validation-result.interface.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Matters\Components\wudInquiryLine.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Notes\Components\add-notes.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Notes\Components\notes.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\applicationuser.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\ComboBoxArrow\comboboxarrow.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\cascadebox.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\checkbox.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\combobox.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\contactbox.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\currencybox.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\datebox.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\datetimebox.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\numericbox.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\phonebox.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\ssnbox.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\tabpage.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\textarea.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\CustomTabFactory\textbox.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\CustomTabPreferences\customtabpreferences.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\Directives\capitalize-first-directive.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\Directives\date-format-pipe.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\Directives\focus.directive.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\Directives\limit-words-pipe.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\Directives\popup.anchor-target.directive.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\ListDialog\list-dialog-component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\LoadingTemplate\loadingtemplate.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\MessageBox\MessageBox.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\Notification\notification.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\POCO\poco.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\PopupSearch\popupsearch.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\portal.messages.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\portal.shared.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\PortalGrid\portalgrid.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\portalnavbaritems.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\ProfessionalGrid\professional-grid.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\RelatedContactMatterGrid\related-contacts-matters.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\Services\common.services.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\Services\contacts.component.service.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\Services\dockets.component.service.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\Services\documents.component.service.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\Services\home.component.service.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\Services\http-client.services.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\Services\login.component.service.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\Services\matters-view-bag-security.interface.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\Services\matters-view-bag.interface.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\Services\matters.component.service.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\Services\notes.component.service.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\Services\transactions.component.service.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\SharedService\shared.service.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\TextInputSearchFunnel\textinputsearchfunnel.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\PortalShared\ProLawDisabledDateTimePicker\disableddtpicker.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Transactions\Components\add-transactions.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Transactions\Components\move-to-wip-transactions.component.ts" />
+    <TypeScriptCompile Include="src\app\Area\ProLawPortal\Transactions\Components\transactions.component.ts" />
+    <TypeScriptCompile Include="src\app\componentconfig.ts" />
+    <TypeScriptCompile Include="src\app\environment.ts" />
+    <TypeScriptCompile Include="src\app\Guards\auth-guard.service.ts" />
+    <TypeScriptCompile Include="src\app\Interceptors\http-interceptors.ts" />
+    <TypeScriptCompile Include="src\app\Modules\componentresolver.module.ts" />
+    <TypeScriptCompile Include="src\app\Modules\contacts.module.ts" />
+    <TypeScriptCompile Include="src\app\Modules\dockets.module.ts" />
+    <TypeScriptCompile Include="src\app\Modules\documents.module.ts" />
+    <TypeScriptCompile Include="src\app\Modules\matters.module.ts" />
+    <TypeScriptCompile Include="src\app\Modules\notes.module.ts" />
+    <TypeScriptCompile Include="src\app\Modules\transactions.module.ts" />
+    <TypeScriptCompile Include="src\app\Shared\auth.user.ts" />
+    <TypeScriptCompile Include="src\app\Shared\global.ts" />
+    <TypeScriptCompile Include="src\app\Shared\index.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\base.component.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\componentfactory.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\global.constants.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\global.errorhandler.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\global.errors.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\global.messages.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\global.services.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\Loader.component.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\messaging.config.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\messaging.service.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\ProLawAlert\prolawalert.component.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\ProLawAspects\loggeraspect.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\ProLawDialog\prolawdialog.component.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\ProLawDialog\prolawdialogposition.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\ProLawGrid\prolawgrid.component.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\ProLawGrid\row-click.directive.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\ProLawInProgress\prolawinprogress.component.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\ProLawPageMessage\pagemessage.component.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\ProLawSpellCheck\spellcheck.component.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\ProLawSpellCheck\spellcheck.service.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\ProLawSpellCheck\spellcheckstack.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\ProLawSpellCheck\spellcheckutils.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\ProLawValidation\customvalidators.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\ProLawValidation\validation.component.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\ProLawValidation\validation.config.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\ProLawValidation\validation.service.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\SearchBase\searchbase.component.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\SearchComponents\contactsearch.component.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\SearchComponents\dockettypesearch.component.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\SearchComponents\documenttypesearch.component.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\SearchComponents\mattersearch.component.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\SearchComponents\professionalsearch.component.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\SearchProfessional\SearchProfessional.component.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Infrastructure\tab-strip-utility.class.ts" />
+    <TypeScriptCompile Include="src\app\Shared\POCO\poco.enums.ts" />
+    <TypeScriptCompile Include="src\app\Shared\POCO\poco.ts" />
+    <TypeScriptCompile Include="src\app\Shared\PortalAppGrid.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Utils\event.utils.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Utils\PortalUtility.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Utils\portalutils.ts" />
+    <TypeScriptCompile Include="src\app\Shared\Utils\prolaw.utils.ts" />
+    <TypeScriptCompile Include="src\custom-typings.d.ts" />
+    <TypeScriptCompile Include="src\main.ts" />
+    <TypeScriptCompile Include="src\polyfills.ts" />
+    <TypeScriptCompile Include="src\test.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\fonts\glyphicons-halflings-regular.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\fonts\glyphicons-halflings-regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\fonts\fontawesome-webfont.eot" />
+    <Content Include="src\fonts\fontawesome-webfont.ttf" />
+    <Content Include="src\fonts\fontawesome-webfont.woff" />
+    <Content Include="src\fonts\fontawesome-webfont.woff2" />
+    <Content Include="src\fonts\FontAwesome.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\app\Area\PaperlessProforma\Templates\massproformaGeneration.component.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\app\Area\PaperlessProforma\Templates\collaborationDetails.component.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\External\config.development.json" />
+    <Content Include="src\External\config.production.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\app\Area\ProLawPortal\Matters\Components\example.assigned-contacts.json" />
+    <Content Include="src\app\Area\ProLawPortal\Matters\Components\example.contact-funnel.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\app\Area\Help\prolawportal.log" />
+    <Content Include="src\app\Area\Help\RoboHHRE.lng" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="e2e\tsconfig.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="angular.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tsconfig-es5.app.json" />
+    <Content Include="tsconfig.app.json" />
+    <Content Include="tsconfig.json" />
+    <Content Include="tsconfig.spec.json" />
+    <Content Include="tslint.json" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <TypeScriptTarget>ES6</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49863</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49863/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

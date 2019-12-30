@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+    "types": ["node"]
+  },
+  "include": [
+    "src/**/*.ts",
+    "node_modules/angular2-web-worker/**/*.ts"
+  ],
+  "exclude": [
+    "src/test.ts",
+    "src/**/*.spec.ts"
+  ],
+  "angularCompilerOptions": {
+    "enableIvy": false
+  }
+}
